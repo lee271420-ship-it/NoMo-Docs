@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NoMo - 用户服务协议</title>
+    <style>
+        body { font-family: -apple-system, sans-serif; line-height: 1.6; color: #333; padding: 20px; max-width: 800px; margin: auto; }
+        h1 { color: #000; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+    </style>
+</head>
+<body>
+    <h1>用户服务协议 (EULA)</h1>
+    <p>欢迎使用 NoMo。使用本应用即代表您同意以下条款：</p>
+    <h3>1. 医疗免责声明</h3>
+    <p>NoMo 仅作为缓解晕车的辅助工具。它不是医疗诊断，不能替代药物治疗。在使用过程中如感到任何不适，请立即停止使用并咨询医生。</p>
+    <h3>2. 订阅服务</h3>
+    <p>订阅将通过您的 Apple ID 账户扣费。您可以随时在手机设置中取消自动续费。已产生的费用不予退还，除非符合苹果官方的退款政策。</p>
+    <h3>3. 安全声明</h3>
+    <p>严禁驾驶员在驾驶过程中操作本应用。NoMo 不对任何因违反交通安全规则而导致的事故负责。</p>
+    <div style="margin-top:50px; text-align:center; color:#888;">最后更新：2026年2月</div>
+</body>
+</html>
