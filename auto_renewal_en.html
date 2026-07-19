@@ -3,128 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NutriSnap - Automatic Renewal Terms</title>
+    <title>NoMo - Auto-Renewal Service Agreement</title>
     <style>
-        :root {
-            --text: #1d1d1d;
-            --muted: #5b5b5b;
-            --line: #e7e7e7;
-        }
-
-        * { box-sizing: border-box; }
-
-        body {
-            margin: 0;
-            background: #fff;
-            color: var(--text);
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-            line-height: 1.75;
-        }
-
-        main {
-            max-width: 840px;
-            margin: 0 auto;
-            padding: 32px 20px 56px;
-        }
-
-        header {
-            padding-bottom: 20px;
-            margin-bottom: 28px;
-            border-bottom: 1px solid var(--line);
-        }
-
-        h1 {
-            margin: 0;
-            font-size: 34px;
-            line-height: 1.15;
-            letter-spacing: -0.02em;
-        }
-
-        .meta {
-            margin-top: 12px;
-            font-size: 14px;
-            color: var(--muted);
-        }
-
-        section { margin: 0 0 24px; }
-
-        h2 {
-            margin: 0 0 8px;
-            font-size: 20px;
-            line-height: 1.25;
-        }
-
-        p, li {
-            margin: 0;
-            font-size: 15px;
-            color: var(--muted);
-        }
-
-        ol, ul {
-            margin: 10px 0 0;
-            padding-left: 20px;
-        }
-
-        li { margin: 6px 0; }
-
-        a { color: inherit; }
-
-        footer {
-            margin-top: 40px;
-            padding-top: 18px;
-            border-top: 1px solid var(--line);
-            font-size: 13px;
-            color: #767676;
-        }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.6; color: #333; padding: 20px; max-width: 800px; margin: auto; }
+        h1 { color: #000; border-bottom: 2px solid #eee; padding-bottom: 10px; font-size: 1.5em; }
+        h2 { font-size: 1.1em; margin-top: 25px; color: #222; border-left: 4px solid #333; padding-left: 10px; }
+        p, li { font-size: 0.95em; color: #444; }
+        .meta-info { font-size: 0.85em; color: #888; margin-bottom: 20px; }
+        .highlight { color: #000; font-weight: bold; }
+        .footer { margin-top: 50px; font-size: 0.85em; color: #888; text-align: center; border-top: 1px solid #eee; padding-top: 20px; }
     </style>
 </head>
 <body>
-    <main>
-        <header>
-            <h1>NutriSnap Automatic Renewal Terms</h1>
-            <div class="meta">Last updated: July 16, 2026</div>
-        </header>
+    <h1>NoMo Auto-Renewal Service Agreement</h1>
+    <div class="meta-info">
+        Last Updated: February 17, 2026<br>
+        Effective Date: February 17, 2026
+    </div>
 
-        <section>
-            <h2>1. Scope</h2>
-            <p>These terms apply only to the NutriSnap weekly auto-renewable subscription.</p>
-        </section>
+    <p>This agreement applies to users who purchase the <strong>NoMo Weekly Membership (15.00 CNY/week)</strong>.</p>
+    <p>This agreement is entered into between the user (hereinafter "You") and <span class="highlight">Guo Jueliang</span> (hereinafter "We" or "the Developer").</p>
 
-        <section>
-            <h2>2. Renewal Authorization</h2>
-            <ol>
-                <li>By confirming the weekly subscription, you authorize Apple to charge your Apple ID for the next renewal period.</li>
-                <li>Apple may charge the renewal fee within 24 hours before the current subscription period ends.</li>
-                <li>If you do not cancel at least 24 hours before the end of the current period, the subscription will automatically renew.</li>
-            </ol>
-        </section>
+    <h2>I. Auto-Renewal Description</h2>
+    <ol>
+        <li>The Weekly Membership is an auto-renewable subscription product.</li>
+        <li>By confirming your subscription, you authorize <strong>Apple</strong> to automatically deduct the fee for the next week (15.00 CNY) from your <strong>Apple ID account</strong> within 24 hours before the end of the current subscription period.</li>
+        <li>If you do not cancel the subscription at least 24 hours before the end of the current period, the system will automatically renew the subscription.</li>
+    </ol>
 
-        <section>
-            <h2>3. How to Cancel</h2>
-            <p>On your iPhone, open <strong>Settings</strong> &rarr; tap <strong>Apple ID</strong> &rarr; select <strong>Subscriptions</strong> &rarr; find <strong>NutriSnap</strong> &rarr; select <strong>Cancel Subscription</strong>.</p>
-            <p>After cancellation, your benefits remain active until the end of the current paid period, and the subscription will not renew after that period ends.</p>
-        </section>
+    <h2>II. Cancellation Method (iOS)</h2>
+    <p>To cancel, please follow these steps on your iPhone:</p>
+    <p>Open <strong>Settings</strong> → Tap <strong>Apple ID</strong> → Select <strong>Subscriptions</strong> → Find <strong>NoMo</strong> → Select <strong>Cancel Subscription</strong>.</p>
+    <p>Upon cancellation, your benefits within the currently paid period remain valid, and the subscription will not be renewed after expiration.</p>
 
-        <section>
-            <h2>4. Billing and Refunds</h2>
-            <ol>
-                <li>Apple handles billing, renewal charges, and refunds.</li>
-                <li>RevenueCat is used to identify subscription status, but it does not replace Apple's billing system.</li>
-                <li>If you need a refund, please use Apple's official refund process.</li>
-            </ol>
-        </section>
+    <h2>III. Billing & Refunds</h2>
+    <ol>
+        <li>Payments and billing are handled by <strong>Apple</strong>.</li>
+        <li>The application uses <strong>RevenueCat</strong> for subscription status identification but does not store your payment information.</li>
+        <li>If a refund is required for deducted fees, please apply through official <strong>Apple</strong> refund channels.</li>
+    </ol>
 
-        <section>
-            <h2>5. Price Changes</h2>
-            <p>Any future price change will take effect in the next subscription period after Apple applies the new price.</p>
-        </section>
+    <h2>IV. Price Changes</h2>
+    <p>Any future price adjustments will take effect in the new subscription cycle.</p>
 
-        <section>
-            <h2>6. Contact</h2>
-            <p>If you have questions about automatic renewal, contact us at <a href="mailto:matt1232024@163.com">matt1232024@163.com</a>.</p>
-        </section>
+    <h2>V. Contact Information</h2>
+    <p>
+        <strong>Developer:</strong> Guo Jueliang<br>
+        <strong>Email:</strong> <a href="mailto:matt1232024@163.com">matt1232024@163.com</a>
+    </p>
 
-        <footer>© 2026 NutriSnap. All rights reserved.</footer>
-    </main>
+    <div class="footer">
+        © 2026 NoMo. All rights reserved.
+    </div>
 </body>
 </html>
