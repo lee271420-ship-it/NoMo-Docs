@@ -3,57 +3,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NoMo - Auto-Renewal Service Agreement</title>
+    <title>NoMo - Automatic Renewal Terms</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.6; color: #333; padding: 20px; max-width: 800px; margin: auto; }
-        h1 { color: #000; border-bottom: 2px solid #eee; padding-bottom: 10px; font-size: 1.5em; }
-        h2 { font-size: 1.1em; margin-top: 25px; color: #222; border-left: 4px solid #333; padding-left: 10px; }
-        p, li { font-size: 0.95em; color: #444; }
-        .meta-info { font-size: 0.85em; color: #888; margin-bottom: 20px; }
-        .highlight { color: #000; font-weight: bold; }
-        .footer { margin-top: 50px; font-size: 0.85em; color: #888; text-align: center; border-top: 1px solid #eee; padding-top: 20px; }
+        :root {
+            --text: #1d1d1d;
+            --muted: #5c5c5c;
+            --line: #e7e7e7;
+        }
+
+        * { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            background: #ffffff;
+            color: var(--text);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            line-height: 1.75;
+        }
+
+        main {
+            max-width: 840px;
+            margin: 0 auto;
+            padding: 32px 20px 56px;
+        }
+
+        header {
+            padding-bottom: 20px;
+            margin-bottom: 28px;
+            border-bottom: 1px solid var(--line);
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 34px;
+            line-height: 1.15;
+            letter-spacing: -0.02em;
+        }
+
+        .meta {
+            margin-top: 12px;
+            font-size: 14px;
+            color: var(--muted);
+        }
+
+        section {
+            margin: 0 0 24px;
+        }
+
+        h2 {
+            margin: 0 0 8px;
+            font-size: 20px;
+            line-height: 1.25;
+        }
+
+        p, li {
+            margin: 0;
+            font-size: 15px;
+            color: var(--muted);
+        }
+
+        ul, ol {
+            margin: 10px 0 0;
+            padding-left: 20px;
+        }
+
+        li {
+            margin: 6px 0;
+        }
+
+        .highlight {
+            color: var(--text);
+            font-weight: 600;
+        }
+
+        a {
+            color: inherit;
+        }
+
+        footer {
+            margin-top: 40px;
+            padding-top: 18px;
+            border-top: 1px solid var(--line);
+            font-size: 13px;
+            color: #767676;
+        }
     </style>
 </head>
 <body>
-    <h1>NoMo Auto-Renewal Service Agreement</h1>
-    <div class="meta-info">
-        Last Updated: February 17, 2026<br>
-        Effective Date: February 17, 2026
-    </div>
+    <main>
+        <header>
+            <h1>NoMo Automatic Renewal Terms</h1>
+            <div class="meta">
+                Last updated: February 17, 2026<br>
+                Effective date: February 17, 2026
+            </div>
+        </header>
 
-    <p>This agreement applies to users who purchase the <strong>NoMo Weekly Membership (15.00 CNY/week)</strong>.</p>
-    <p>This agreement is entered into between the user (hereinafter "You") and <span class="highlight">Guo Jueliang</span> (hereinafter "We" or "the Developer").</p>
+        <p>This agreement applies to users who purchase the <span class="highlight">NoMo Weekly Membership</span> (CNY 15.00 per week).</p>
+        <p>This agreement is entered into between you and <span class="highlight">Guo Jueliang</span>.</p>
 
-    <h2>I. Auto-Renewal Description</h2>
-    <ol>
-        <li>The Weekly Membership is an auto-renewable subscription product.</li>
-        <li>By confirming your subscription, you authorize <strong>Apple</strong> to automatically deduct the fee for the next week (15.00 CNY) from your <strong>Apple ID account</strong> within 24 hours before the end of the current subscription period.</li>
-        <li>If you do not cancel the subscription at least 24 hours before the end of the current period, the system will automatically renew the subscription.</li>
-    </ol>
+        <section>
+            <h2>1. Automatic Renewal Description</h2>
+            <ol>
+                <li>The Weekly Membership is an auto-renewable subscription product.</li>
+                <li>By confirming your subscription, you authorize Apple to automatically charge the fee for the next week (CNY 15.00) from your Apple ID account within 24 hours before the end of the current subscription period.</li>
+                <li>If you do not cancel the subscription at least 24 hours before the end of the current period, the subscription will automatically renew.</li>
+            </ol>
+        </section>
 
-    <h2>II. Cancellation Method (iOS)</h2>
-    <p>To cancel, please follow these steps on your iPhone:</p>
-    <p>Open <strong>Settings</strong> → Tap <strong>Apple ID</strong> → Select <strong>Subscriptions</strong> → Find <strong>NoMo</strong> → Select <strong>Cancel Subscription</strong>.</p>
-    <p>Upon cancellation, your benefits within the currently paid period remain valid, and the subscription will not be renewed after expiration.</p>
+        <section>
+            <h2>2. How to Cancel on iOS</h2>
+            <p>To cancel, follow these steps on your iPhone:</p>
+            <p>Open <strong>Settings</strong> &rarr; tap <strong>Apple ID</strong> &rarr; select <strong>Subscriptions</strong> &rarr; find <strong>NoMo</strong> &rarr; select <strong>Cancel Subscription</strong>.</p>
+            <p>After cancellation, your benefits remain valid through the current paid period, and the subscription will not renew after it expires.</p>
+        </section>
 
-    <h2>III. Billing & Refunds</h2>
-    <ol>
-        <li>Payments and billing are handled by <strong>Apple</strong>.</li>
-        <li>The application uses <strong>RevenueCat</strong> for subscription status identification but does not store your payment information.</li>
-        <li>If a refund is required for deducted fees, please apply through official <strong>Apple</strong> refund channels.</li>
-    </ol>
+        <section>
+            <h2>3. Billing and Refunds</h2>
+            <ol>
+                <li>Charges and billing are handled by Apple.</li>
+                <li>The app uses RevenueCat to identify subscription status, but it does not store your payment information.</li>
+                <li>If you need a refund for any charged amount, please apply through Apple's official refund channels.</li>
+            </ol>
+        </section>
 
-    <h2>IV. Price Changes</h2>
-    <p>Any future price adjustments will take effect in the new subscription cycle.</p>
+        <section>
+            <h2>4. Price Changes</h2>
+            <p>Any future price changes will take effect in the next subscription period.</p>
+        </section>
 
-    <h2>V. Contact Information</h2>
-    <p>
-        <strong>Developer:</strong> Guo Jueliang<br>
-        <strong>Email:</strong> <a href="mailto:matt1232024@163.com">matt1232024@163.com</a>
-    </p>
+        <section>
+            <h2>5. Contact Information</h2>
+            <p>Developer: Guo Jueliang<br>Email: <a href="mailto:matt1232024@163.com">matt1232024@163.com</a></p>
+        </section>
 
-    <div class="footer">
-        © 2026 NoMo. All rights reserved.
-    </div>
+        <footer>
+            © 2026 NoMo. All rights reserved.
+        </footer>
+    </main>
 </body>
 </html>
